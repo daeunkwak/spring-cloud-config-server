@@ -2,10 +2,68 @@ server:
   port: 8888
 spring:
   application:
-    name: config-server
+    name: fairer-config
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/daeunkwak/spring-cloud-config.git
-          default-label: main
+          uri: git@github.com:depromeet/fairer-config.git
+          ignoreLocalSshSettings: true
+          privateKey: |
+            -----BEGIN RSA PRIVATE KEY-----
+            MIIJKgIBAAKCAgEAxy6yBd7PmILEWxIde9IIvCFrh+4uAodaU1cxmSMm+fHkyPrp
+            3RTowAYXcuNxHgonxOst1IlOsU/DkPNKZzSiklBKqykEF2zuiDxngjj1WYxdvRdt
+            hkB6Yqnt/OfSUX4jhxZ6Q3CsFYJ8yavYMRJ5rtfX7lTaZsxUH4ivs5c3nXOC7oLY
+            WAgzkuMRklP+v8BhYn8PppUPAO70t0qDIcY6sJ8AnL58IzSMIRDdjEYq12hTh3m8
+            cGOwRBgCQbMfVnHr6UV4Ba0UD/CcJGYRIfpfELSshFa8UqRirqWVVHKMEO7fGpYQ
+            od1r+mwxHkvBSeLpytBPMMttggSzwz4rqJVDS0emRzH9W6XeYZOkKj5yl65tt2pY
+            pspSMf2wqO7gBlrKk1Nu/L5eKU7zsBwQ7JwXWGQeDzSXhUmfk+8+Umewbm4dDtmb
+            SbpHNlrgEBCkGIxh/mzwiVYF9ncY6i4LIVNItYmaSUaANmhTblz7ZVKwACeYRa9R
+            lBuoDRzW53az8hqxayaz+zlHjZwkLNGHbWD2URhoP+X4GjVA2k2WiC549v7ls68K
+            CgDlQlaAtuWxygQvwVJwIM57QkokLIGh2if0uRxx0lu9AO71DIgqohYPgPxgkThT
+            03Vxt93tnmhywB9HY4MO7JcZXktT0mP1AMtVcx0TmrfWVGLNYeFvbq13HesCAwEA
+            AQKCAgEAlg5ixbNnWDFj9mw+VBMWy4yt8xkIBpWsAc9VqVXnPjPzNUp6tzjSZB/y
+            uHYKuSPTdDHtNApBg6lg3ym6qufndi0RI8Nhtrg1N+Ox41Q/2re5wwQMWjDnQr9c
+            cMTBGO3bnCDd+ULAEfBdTJ2u4MFXdNZdccrxQrK6yYrzO2w31OG6CTAABsoe+JEi
+            oseuyw0HEOpCgzAWvpBHQnLbOa2ad4dCMdP7t5YV369SCSSvj9qj2xNmWJFxsMsZ
+            oB9vA3QN046nbjdHPv740x8l1yBFUFOdCJJDjEsVoRdT2ev2A6fB4sidPSSP/XhW
+            xMkzlBNkKIworM0E8gfS2ctTnszchVyq2H0wRfev7/PBvZyg/haIsQBzGyp1YLm1
+            nqYePD4I+QVFvSmu/OdV6yZxGJQ3tfKjuJ1WUdIuabQq1HpXCJa/pU/tJUibSM5Q
+            EJvUThcJ/W/QqkwYofjc1PqUQeAbhOtOI5Wvs8KLqFvLp71mYruXxtQ4E8cuWWxu
+            AUsxx9t0Z7qkNCMRqDb69/950VY0TNhYthdIXHAZb3R7RAAZT9xYATAQuHupkqj5
+            TFVI1yqqGifUtF4Sv8tOm/9EouGCpA457s8PpBPD3Y1vlQ+JHDSXxvkQmZyaPxjt
+            8/fITWa9NkQtkGo+7vH1l7s1R4DgDc/WXaKyx9+2/DM5PdgXJzkCggEBAOtxKKWD
+            fnI2RuHA+JeUB5/xsx+qwN+OoiF1EYvmNiTlxdQ0OMVKlzEMm8Cz0UC1uUplThOw
+            kJGZa0jity3eu/sEfsu17ET7+EgjC6BbwCSwzzf5mQ9OHkS+1JQbcAZL2NcIG28r
+            klBLYwL7yP2VkUSYIxXxIBdO5NIBUyKrK57orf951Vu0FuSUlWyJ3GZQF6GXBvBi
+            5Z3SD1gxZmaru77zXukanXH+bnts8AVILmrZDVg9s1ffCxNI77J016/3h2dvCd+q
+            u4qRZEWzzu+CUyVq/aqmd40ojQTNYaBNj+Oac/tAtbh83j1bvzOiOqnW9FrWTN7U
+            2QalqKq6FRGmUN8CggEBANiTBkBlwCUnlxnECQZ5C/MtE8YBIp7ORKAMZ+NU5Dp9
+            4+EjuJWfLfi+FuP3iuaSWsk4hbkzvXWg7/rQWVLISAyGUE/WL/tNkYM7tA5H7lKr
+            8JvxmkSzl6qij7jSfk3d/YeuIyPherin73Awtxjjky/pl/uaLueOIS37jP2MOcbD
+            awhbGuSCbJ5Vt1+Wsk2YkR5k7QenzOTYhdph7igSAXmS2KNko5MQoKVLEtGOeeTL
+            fcn+GW5MS2I7cFaxgxZqJOFJK2uItOIu8IQ5nkXs1r5GA4ulmUViMnAnqbR00v2c
+            41P/aB+BVw/2ZYh5S4JuLKDra3goZyFyJ6dPJybI2HUCggEBAKPCwZLeM0Udm4/K
+            uR41SFhntT+BdUYJ35uF4f580Yw4hbFj4VjY2PC05GDUsedgftDQRc5MMUIUhBre
+            FqtBEV83cTof/4a7+6WxOpT/PFZI5Nj6MwwCOet3EEU0EGdQujJW4T4iAFL5HJUm
+            rFY1giVD7KOGY9vSdDXd1gV3KZAOJ3hbNZvjV0kGUCh+e15utwEeGyV4pF1xjlq5
+            gZBIQv4+KPXaHUj8v7v5ubjyy9ZlwnJt+CBWc02mnZJy0tMCSJwZD7US+/8Vwbj5
+            qCXPcCXGlUntH5p/aha9A/qL+FlHRQStrbf0ol/rQMKZRFR9vtiv1ifnxExrTTXy
+            2FS+aeECggEBAMt7P+lrcF+4VdCAjlZFjsO4u5ZS5Ls+Y93YKhe+X/zQ4TVcAYaa
+            m2/U8d7Yaun94kyizYlXoo+NWUxXS0VrJb6Wx4hrXoOHussJYj/0t2d3Ysax9lbM
+            QhixScXGB6OTiixboWqJ5GrwZhgLvUwmLdlbaU+c6qrmsCfq6+ohQPuOCdc8+gRu
+            wiz1rieih/499UMQYl/J+cmd4g1v63o8iKQ4I1FJMiLwAW+sHI9FhSNBSftpwW0P
+            Q9iUrhTWDasWqXX98EzFkeXdYl9pX1qljpIRaC1htqMpAui7a0hAZyifqjr2glbv
+            h+RYhcb258oxR78d0ciAdX1IKxeYV9mp5S0CggEAP2kDXD/v0jgRcHb7GY6ZGeVI
+            +G/3PGyMxjupiuYrTpd4b4aUhXu3+15M7N0oD+gv/WNw3OqNfO1XH+4Y4LQc2xMp
+            uSqEc9F0d7gEtW8KX+kfXXu4EwPWyHFIAfXoV94TSiqzlAxB3VI7UqUSDfCwgZm8
+            6JfmX0Mz5JcFucwXuydkmxqRtUMNaR57oydc76i1eMVPndVRGvio+YWIInh+hGZi
+            TW+D+MKUwiHDcPfjvOu0hg8YGymNpATMUrHtBZT/VvETduQIwQBxnXWSrSXB6WYO
+            fnq5PL7IAiBhWYf5vX5/UiVOJO//8/thWpRwd+/70Do7hXU+lvpCumcETirQag==
+            -----END RSA PRIVATE KEY-----
+          default-label: master
+
+management:
+  health:
+    mail:
+      enabled: false
